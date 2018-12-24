@@ -29,3 +29,22 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。
 
 要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
+
+在，我们根据GitHub的提示，在本地的learngit仓库下运行命令：
+
+$ git remote add origin git@github.com:zhangchao995718/learngit.git
+要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆
+$ git clone git@github.com:michaelliao/gitskills.git
+
+首先，我们创建dev分支，然后切换到dev分支：
+
+$ git checkout -b dev
+
+git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：
+
+$ git branch dev
+$ git checkout dev
+
+然后，用git branch命令查看当前分支：
+
+$ git branch
