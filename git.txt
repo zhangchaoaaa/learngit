@@ -1,0 +1,31 @@
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+创建版本库
+git init
+
+$ git add readme.txt
+
+$ git add file1.txt
+$ git add file2.txt file3.txt
+
+$ git commit -m "wrote a readme file"
+
+简单解释一下git commit命令，-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。
+
+$ git status
+
+git diff顾名思义就是查看difference，显示的格式正是Unix通用的diff格式，可以从上面的命令输出看到，我们在第一行添加了一个distributed单词。
+
+$ git log
+$ git log --pretty=oneline
+git log命令显示从最近到最远的提交日志，我们可以看到3次提交，最近的一次是append GPL，上一次是add distributed，最早的一次是wrote a readme file。
+
+$ git reset --hard 1094a
+
+$ cat readme.txt
+
+HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。
+
+穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。
+
+要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
