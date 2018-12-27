@@ -1,4 +1,4 @@
-$ git config --global user.name "Your Name"
+﻿$ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com"
 创建版本库
 git init
@@ -32,7 +32,8 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 
 在，我们根据GitHub的提示，在本地的learngit仓库下运行命令：
 
-$ git remote add origin git@github.com:zhangchao995718/learngit.git
+$ git remote add origin git@github.com:zhangchaoaaa/learngit.git
+$ git push -u origin master
 要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆
 $ git clone git@github.com:michaelliao/gitskills.git
 
@@ -82,8 +83,6 @@ git merge命令用于合并指定分支到当前分支。合并后，再查看re
 
 $ git branch -d dev
 Deleted branch dev (was b17d20e).
-
-
 Git鼓励大量使用分支：
 
 查看分支：git branch
@@ -97,3 +96,4 @@ Git鼓励大量使用分支：
 合并某分支到当前分支：git merge <name>
 
 删除分支：git branch -d <name>
+end
